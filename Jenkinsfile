@@ -5,13 +5,13 @@ pipeline {
 
         stage('Check Python Version') {
             steps {
-                bat 'python3 --version'
+                bat 'python --version'
             }
         }
 
         stage('Run Python Script') {
             steps {
-                bat 'python3 hello.py'
+                bat 'python hello.py'
             }
         }
 
