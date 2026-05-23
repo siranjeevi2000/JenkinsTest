@@ -5,13 +5,13 @@ pipeline {
 
         stage('Check Python Version') {
             steps {
-                bat 'python --version'
+                bat '"C:\\Users\\siran\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe" --version'
             }
         }
 
         stage('Run Python Script') {
             steps {
-                bat 'python hello.py'
+                bat '"C:\\Users\\siran\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe" hello.py'
             }
         }
 
